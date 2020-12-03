@@ -3,9 +3,9 @@ type: docker
 name: default
 steps:
 - name: test
-  image: golang:alpine
+  image: golang
   commands:
-  - go test -v -cover -covermode=atomic ./...
+  - make test
 
 - name: coveralls
   image: lizheming/drone-coveralls
