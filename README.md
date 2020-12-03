@@ -1,5 +1,7 @@
 # Movie Service
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=vinbyte_movies&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=vinbyte_movies) [![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=vinbyte_movies&metric=reliability_rating)](https://sonarcloud.io/dashboard?id=vinbyte_movies) [![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=vinbyte_movies&metric=security_rating)](https://sonarcloud.io/dashboard?id=vinbyte_movies)
+
 ## Overview
 
 Movie API using [OMDB](http://www.omdbapi.com/)
