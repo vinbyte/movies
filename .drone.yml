@@ -5,7 +5,7 @@ steps:
 - name: test
   image: golang:alpine
   commands:
-  - make test
+  - go test -v -cover -covermode=atomic ./...
 
 - name: coveralls
   image: lizheming/drone-coveralls
