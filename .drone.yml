@@ -6,11 +6,5 @@ steps:
   image: golang
   commands:
   - make test
-
-- name: coveralls
-  image: lizheming/drone-coveralls
-  settings:
-    token:
-      from_secret: coveralls_token
-    files:
-    - ./coverage.out
+  - go get github.com/mattn/goveralls
+  - goveralls -service drone.io
