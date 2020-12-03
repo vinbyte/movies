@@ -4,10 +4,9 @@ name: default
 steps:
 - name: test
   image: golang
+  commands:
+  - go get github.com/mattn/goveralls
+  - goveralls -v -service drone.io
   environment:
     COVERALLS_TOKEN:
-      from_secret: COVERALLS_TOKEN
-  commands:
-  - make test
-  - go get github.com/mattn/goveralls
-  - goveralls -service drone.io
+      from_secret: coveralls_token
