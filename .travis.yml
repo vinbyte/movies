@@ -3,4 +3,8 @@ language: go
 go:
 - "1.14"
 
-script: make test
+install: 
+- go get github.com/mattn/goveralls
+script: 
+- make test
+- goveralls -coverprofile=coverage.out -service=travis-ci -repotoken $COVERALLS_TOKEN
